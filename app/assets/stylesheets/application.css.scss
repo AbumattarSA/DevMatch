@@ -18,11 +18,18 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-/* Gradient courtesy of @_ighosh at //uiGradients.com/ */
-body, .navbar {
-  background: #8E2DE2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* Active gradient courtesy of //ColorZilla.com/ */
+/* Inactive gradient courtesy of @_ighosh at //uiGradients.com/ */
+.home-color, .navbar, {
+   background: #cfe7fa; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #cfe7fa 0%, #6393c1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #cfe7fa 0%,#6393c1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #cfe7fa 0%,#6393c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+  // background: #8E2DE2;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -30,7 +37,7 @@ h1, h2, h3 {
     font-family: 'Nunito', sans-serif;
 }
 
-/* Gradient courtesy of //ColorZilla.com/ */
+/* Active gradient courtesy of //ColorZilla.com/ */
 .site-header {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfe7fa+0,6393c1+100;Grey+Blue+3D */
     background: #cfe7fa; /* Old browsers */
@@ -38,6 +45,9 @@ h1, h2, h3 {
     background: -webkit-linear-gradient(45deg, #cfe7fa 0%,#6393c1 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, #cfe7fa 0%,#6393c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin-top: -20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 
