@@ -20,7 +20,7 @@
 
 /* Active gradient courtesy of //ColorZilla.com/ */
 /* Inactive gradient courtesy of @_ighosh at //uiGradients.com/ */
-.home-color, .navbar, {
+.navbar, {
    background: #cfe7fa; /* Old browsers */
     background: -moz-linear-gradient(45deg, #cfe7fa 0%, #6393c1 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(45deg, #cfe7fa 0%,#6393c1 100%); /* Chrome10-25,Safari5.1-6 */
@@ -57,4 +57,22 @@ h1, h2, h3 {
 
 .navbar {
   border: none;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+  opacity: 0.75;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  opacity: 0.75;
 }
