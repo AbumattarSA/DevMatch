@@ -18,6 +18,10 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+/*Incorporation of Font Awesome */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 /* Active gradient courtesy of //ColorZilla.com/ */
 /* Inactive gradient courtesy of @_ighosh at //uiGradients.com/ */
 .navbar, {
