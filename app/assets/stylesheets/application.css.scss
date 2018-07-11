@@ -40,6 +40,7 @@
 // Typography styling
 h1, h2, h3 {
     font-family: 'Nunito', sans-serif;
+    font-weight: 800;
 }
 
 /* Active gradient courtesy of //ColorZilla.com/ */
@@ -60,12 +61,7 @@ h1, h2, h3 {
     color: white;
 }
 
-// Removes space between banner and navigation bar
-.navbar {
-  border: none;
-}
-
-// Navigation menu styling
+/* Navigation menu styling */
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: white;
   &:hover {
@@ -73,4 +69,15 @@ h1, h2, h3 {
     opacity: 0.75;
   }
   
+}
+
+// Removes space between banner and navigation bar
+.navbar {
+  border: none;
+}
+
+// Logo styling
+.navbar-brand {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
 }
