@@ -71,6 +71,17 @@ h1, h2, h3 {
   
 }
 
+// Dropdown menu styles
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #6393c1;
+  }
+}
+
 // Removes space between banner and navigation bar
 .navbar {
   border: none;
