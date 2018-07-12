@@ -5,8 +5,35 @@
     </header>
     <body>
         <div class="container text-center">
-            <h1>Contact Form</h1>
-            <p>Dummy text.</p>
+            <h1>Contact Us</h1>
+        </div>
+        <div class="container">
+            <p>Please fill out the contact form below in order to contact us.</p>
+            
+            <!--<form>-->
+            <!--  <label>Full name</label>-->
+            <!--  <input type="text" />-->
+            <!--  <br>-->
+            <!--  <label>Email address</label>-->
+            <!--  <input type="text" />-->
+            <!--  <br>-->
+            <!--  <label>Comments</label>-->
+            <!--  <input type="text" />-->
+              
+            <!--  <input type="submit">-->
+            <!--</form>-->
+            
+            <%= form_for "/contacts" do |f| %>
+                <%= f.label :name %>
+                <%= f.text_field :name %>
+                
+                <%= f.label :email %>
+                <%= f.text_field :email %>
+                
+                <%= f.label :comments %>
+                <%= f.text_area :comments %>
+                <%= f.submit 'Submit' %>
+            <% end %>
         </div>
     </body>
 </html>
