@@ -92,3 +92,8 @@ h1, h2, h3 {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
 }
+
+// Remove alert notices from Devise gem
+.alert-notice {
+  display: none;
+}
