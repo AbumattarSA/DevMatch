@@ -82,7 +82,7 @@ h1, h2, h3 {
   }
 }
 
-// Removes space between banner and navigation bar
+// Remove space between banner and navigation bar
 .navbar {
   border: none;
 }
@@ -96,4 +96,14 @@ h1, h2, h3 {
 // Remove alert notices from Devise gem
 .alert-notice {
   display: none;
+}
+
+// Add a border to navbar buttons to make them distinct
+.btn {
+  border: 1px solid #E6E6E6;
+} 
+
+// Correct margin above sign up buttons 
+.home-signup-links {
+  margin-top: 30px;
 }

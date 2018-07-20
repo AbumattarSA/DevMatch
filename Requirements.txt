@@ -1,0 +1,5 @@
+# Memberships
+* Show the user a link to the 'basic' plan on the home page.
+    -  The link to the 'basic' plan should point the user to the regular Devise sign up form.
+* Show the user a link to the 'pro' plan on the home page.
+    - The link to the 'pro' plan should point the user to the custom sign up form with e-commerce incorporated.
