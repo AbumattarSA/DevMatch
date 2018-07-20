@@ -17,7 +17,7 @@
                         <h2 class="text-center">Basic Membership</h2>
                         <h4>Gain basic access to the DevMatch community for free.</h4>
                         <br/>
-                        <%= link_to "Sign up now", '#' , class: 'btn btn-primary btn-lg btn-block' %>
+                        <%= link_to "Sign up now", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
                     </div>
                 </div>
                     
@@ -26,7 +26,7 @@
                         <h2 class="text-center">Pro Membership</h2>
                         <h4>Gain full access to the DevMatch community for £10/month.</h4>
                         <br/>
-                        <%= link_to "Sign up now", '#' , class: 'btn btn-info btn-lg btn-block' %>
+                        <%= link_to "Sign up now", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-info btn-lg btn-block' %>
                         </div>
                     </div>
                 </div>
