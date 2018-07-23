@@ -59,7 +59,7 @@ $(document).on('turbolinks:load', function(){
       var token = response.id;
       
       // Inject the card token into a hidden field.
-      proForm.append( $('input type="hidden" name="user[stripe_card_token]">').val(token) );
+      proForm.append( $('<input type="hidden" name="user[stripe_card_token]">').val(token) );
       
       // Submit the form to our rails application.
       proForm.get(0).submit();
