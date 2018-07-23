@@ -6,7 +6,7 @@
     
 # Stripe Integration
 * The user should have a Stripe customer token in the users table.
-* Javascript will prevent the form from submitting when filled to allow the card information to be sent to Stripe.
+* Javascript will prevent the form from submitting after it is filled to allow the card information to be sent to Stripe.
 * Stripe will return a card token.
 * Javascript will send the user fields and card token to the Rails application for validation.
 * The Rails application will validate the user fields and note their plan ID.
