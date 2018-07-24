@@ -99,9 +99,17 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
-// Remove alert notices from Devise gem
-.alert-notice {
-  display: none;
+// Change Devise flash styles
+.alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: -15px;
+}
+
+.flash-container {
+  width: 100%;
+  position: absolute;
 }
 
 // Add a border to navbar buttons to make them distinct
