@@ -1,4 +1,4 @@
-# Memberships
+# User Memberships
 * Show the user a link to the 'basic' plan on the home page.
     -  The link to the 'basic' plan should point the user to the regular Devise sign up form.
 * Show the user a link to the 'pro' plan on the home page.
@@ -12,3 +12,10 @@
 * The Rails application will validate the user fields and note their plan ID.
 * Upon validation, Rails will send the user's email, plan ID and card token to Stripe's servers and Stripe will create a subscription and return a customer token.
 * Rails will save the customer token and user information to our database.
+
+# User Profiles
+* Each user should have one profile.
+* Each user should see a link to a new profile form upon signing up.
+* The user will be able to create and view their user profile.
+* The user will be able to upload a profile picture.
+* The user will be able to view all other user profiles.
