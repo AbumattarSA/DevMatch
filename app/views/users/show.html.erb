@@ -9,14 +9,15 @@
       </div>
       
       <div class="container">
-        <%= @user.profile.first_name %>
-        <%= @user.profile.last_name %>
-        <%= @user.profile.job_title %>
-        <%= @user.profile.description %>
+        <%= @user.profile.first_name %><br />
+        <%= @user.profile.last_name %><br />
+        <%= image_tag @user.profile.avatar.url %><br />
+        <%= @user.profile.job_title %><br />
+        <%= @user.profile.description %><br />
         
         <% if current_user.plan_id == 2 %>
-          <%= @user.profile.contact_email %>
-          <%= @user.profile.phone_number %>
+          <%= @user.profile.contact_email %><br />
+          <%= @user.profile.phone_number %><br />
         <% end %>
         
       </div>
