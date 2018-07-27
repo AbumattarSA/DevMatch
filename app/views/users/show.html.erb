@@ -1,1 +1,25 @@
-<%= @user.inspect %>
+<!DOCTYPE HTML>
+<html>
+    <header>
+      <title>DevMatch - About</title>
+    </header>
+    <body>
+      <div class="container text-center">
+        <h1>Your Profile</h1>
+      </div>
+      
+      <div class="container">
+        <%= @user.profile.first_name %>
+        <%= @user.profile.last_name %>
+        <%= @user.profile.job_title %>
+        <%= @user.profile.description %>
+        
+        <% if current_user.plan_id == 2 %>
+          <%= @user.profile.contact_email %>
+          <%= @user.profile.phone_number %>
+        <% end %>
+        
+      </div>
+      
+    </body>
+</html>
