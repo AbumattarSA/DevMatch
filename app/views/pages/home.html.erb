@@ -12,29 +12,50 @@
         
         <div class="container home-signup-links">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="well">
-                        <h2 class="text-center">Basic Membership</h2>
-                        <h4>Gain basic access to the DevMatch community for free.</h4>
-                        <br/>
-                        <%= link_to "Sign up now", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
-                    </div>
-                </div>
+                <% if user_signed_in? %>
+                    <div class="col-md-6">
+                        <div class="well">
+                            <h2 class="text-center">Your Profile</h2>
+                            <% if current_user.profile %>
+                                <%= link_to "Edit your profile", '#' , class: 'btn btn-default btn-lg btn-block' %>
+                                <%= link_to "View your profile", user_path(id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
+                            <% else %>
+                                <h4>Create a profile to share your information with the DevMatch community.</h4>
+                                <%= link_to "Create your profile", new_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
+                            <% end %>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-6">
+                        <div class="well">
+                            <h2 class="text-center">Community</h2>
+                            <h4>Visit the community to meet other developers, entrepeneurs and investors.</h4>
+                            <%= link_to "Visit the community", '#', class: 'btn btn-default btn-lg btn-block' %>
+                        </div>
+                    </div>   
                     
-                <div class="col-md-6">
-                    <div class="well">
-                        <h2 class="text-center">Pro Membership</h2>
-                        <h4>Gain full access to the DevMatch community for £10/month.</h4>
-                        <br/>
-                        <%= link_to "Sign up now", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-info btn-lg btn-block' %>
+                <% else %>
+                    <div class="col-md-6">
+                        <div class="well">
+                            <h2 class="text-center">Basic Membership</h2>
+                            <h4>Gain basic access to the DevMatch community for free.</h4>
+                            <br/>
+                            <%= link_to "Sign up now", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
                         </div>
                     </div>
-                </div>
+                        
+                    <div class="col-md-6">
+                        <div class="well">
+                            <h2 class="text-center">Pro Membership</h2>
+                            <h4>Gain full access to the DevMatch community for £10/month.</h4>
+                            <br/>
+                            <%= link_to "Sign up now", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-info btn-lg btn-block' %>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <% end %>
             </div>
-        </div>
-        
-        <div class="container">
-            <%= link_to "Create your profile", new_user_profile_path(user_id: current_user.id) if user_signed_in? %>
         </div>
     </body>
 </html>
